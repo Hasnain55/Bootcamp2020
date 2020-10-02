@@ -30,8 +30,8 @@ jobs:
         with:
           node-version: 12
       - name: Installing Surge
-        run : npm install -globle surge
+        run : npm install --globle surge
       - name: Deploying using Surge
-        run : surge ./dynamic-bit.surge.sh --token $ {{secrets.SURGE_TOKEN}}
+        run : surge ./ dynamic-bit.surge.sh --token $ {{ secrets.SURGE_TOKEN }}
         
                   
