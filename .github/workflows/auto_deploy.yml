@@ -32,6 +32,6 @@ jobs:
       - name: Installing Surge
         run : npm install -globle surge
       - name: Deploying using Surge
-        run : surge ./malicious-spoon.surge.sh/ --token $ {{secrets.SURGE_TOKEN}}
+        run : surge ./dynamic-bit.surge.sh --token $ {{secrets.SURGE_TOKEN}}
         
                   
